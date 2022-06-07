@@ -1,4 +1,6 @@
-# FastAPI and Postgres Template
+# FastAPI and Postgres API Template
+
+Backend only.
 
 **Tools and frameworks used:** FastAPI, SQLAlchemy, Postgres, pgAdmin 4, Pydantic, Alembic, Poetry, Flake8, Black, Pre-commit
 
