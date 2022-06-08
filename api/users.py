@@ -6,8 +6,8 @@ from fastapi import Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from db.db_setup import get_db
-from pydantic_schemas.user import UserCreate, User
-from pydantic_schemas.course import Course
+from db.schemas.user import UserCreate, User
+from db.schemas.course import Course
 from api.utils.users import get_user, get_user_by_email, get_users, create_user
 from api.utils.courses import get_user_courses
 
