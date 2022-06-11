@@ -23,13 +23,13 @@ Backend only.
 
 **db/**\
 &nbsp; **models/**\
-&nbsp; &nbsp; **course.py** -- 
-&nbsp; &nbsp; **mixins.py** -- 
-&nbsp; &nbsp; **user.py** -- 
+&nbsp; &nbsp; **course.py** -- describe the relationships between course model fields and other abstract constraints.\
+&nbsp; &nbsp; **mixins.py** -- let classes from your models inherit fields from the classes in this file.\
+&nbsp; &nbsp; **user.py** -- describe the relationships between user model fields and other abstract constraints.\
 &nbsp; **schemas/**\
-&nbsp; &nbsp; **course.py** -- define the fields and data types for your course model.
-&nbsp; &nbsp; **user.py** -- define the fields and data types for your user model.
-&nbsp; **db_setup.py** -- 
+&nbsp; &nbsp; **course.py** -- define the fields and data types for your course model.\
+&nbsp; &nbsp; **user.py** -- define the fields and data types for your user model.\
+&nbsp; **db_setup.py** -- create the engine and db session for your api as well as the base for your models.
 
 **alembic.ini** -- add your database url to work with alembic.
 
