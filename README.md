@@ -1,6 +1,6 @@
 # FastAPI and Postgres API Template
 
-Backend only.
+Backend only. Run `poetry install`, then `poetry run uvicorn main:app --reload`.
 
 **Tools and frameworks used:** FastAPI, SQLAlchemy, Postgres, pgAdmin 4, Pydantic, Alembic, Poetry, Flake8, Black, Pre-commit
 
@@ -15,11 +15,11 @@ Backend only.
 
 **api/**\
 &nbsp; **utils/**\
-&nbsp; &nbsp; **courses.py** -- 
-&nbsp; &nbsp; **users.py** -- 
-&nbsp; **courses.py** -- 
-&nbsp; **sections.py** -- 
-&nbsp; **users.py** -- 
+&nbsp; &nbsp; **courses.py** -- create functions to create, read, update, and delete courses.\
+&nbsp; &nbsp; **users.py** -- create functions to create, read, update, and delete users.\
+&nbsp; **courses.py** -- set routes to create, read, update, and delete courses.\
+&nbsp; **sections.py** -- set routes to create, read, update, and delete sections.\
+&nbsp; **users.py** -- set routes to create, read, update, and delete users.
 
 **db/**\
 &nbsp; **models/**\

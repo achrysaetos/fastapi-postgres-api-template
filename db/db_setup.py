@@ -9,12 +9,15 @@ SQLALCHEMY_DATABASE_URL = (
     "postgresql+psycopg2://fastapi-postgres-user@localhost/fastapi-postgres-database"
 )
 
+
 # Create the engine and db session with the params you want.
 engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={}, future=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine, future=True)
 
+
 # The base for all your models.
 Base = declarative_base()
+
 
 # Let other parts of your api access the db session.
 def get_db():

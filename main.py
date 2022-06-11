@@ -6,9 +6,11 @@ from api import users, courses, sections
 from db.db_setup import engine
 from db.models import user, course
 
+
 # Create all tables stored in the metadata for the user and course models.
 user.Base.metadata.create_all(bind=engine)
 course.Base.metadata.create_all(bind=engine)
+
 
 # Use FastAPI and personalize the description in its docs.
 app = FastAPI(
@@ -23,6 +25,7 @@ app = FastAPI(
         "name": "MIT",
     },
 )
+
 
 # Import each router in order to use the routes from each api.
 app.include_router(users.router)
